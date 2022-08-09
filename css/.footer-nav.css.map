@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAA;EACP,WAAW,EAAE,KAAK;CACrB",
+    "sources": [
+        "../scss/blocks/.footer-nav.scss"
+    ],
+    "names": [],
+    "file": ".footer-nav.css"
+}

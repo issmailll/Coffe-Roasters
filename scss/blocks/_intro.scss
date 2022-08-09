@@ -1,0 +1,81 @@
+.intro{
+    margin-bottom: 136px;
+    background-image: url(../../img/intro-bg-img.png);
+    background-size: cover;
+    padding-top: 117px;
+    padding-left: 85px;
+    padding-bottom: 132px;
+    border-radius: 10px;
+}
+.intro__content-wrapper{
+    max-width: 493px;
+}
+.intro__title{
+    color: $white;
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0;
+}
+.intro__description{
+    color: $white;
+    opacity: 0.8;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 71px;
+}
+@media only screen and (max-width:$tablet){
+    .intro{
+        margin-bottom: 144px;
+        padding-top: 104px;
+        padding-bottom: 120px;
+        padding-left: 58px;
+        background-image: url(../../img/tablet-intro-bg-img.png);
+        background-size: cover;
+    }
+    .intro__content-wrapper{
+        max-width: 398px;
+    }
+    .intro__title{
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0;
+    }
+    .intro__description{
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 24px;
+        margin-bottom: 55px;
+    }
+}
+@media only screen and (max-width:$mobile){
+    .intro{
+        margin-bottom: 120px;
+        padding-top: 100px;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-bottom: 115px;
+        background-image: url(../../img/mobile-intro-bg-img.png);
+        background-size: cover;
+    }
+    .intro__content-wrapper{
+        max-width: 279px;
+        text-align: center;
+    }
+    .intro__title{
+        margin: 0;
+        font-size: 40px;
+        line-height: 40px;
+    }
+    .intro__description{
+        margin: 0;
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 24px;
+        margin-bottom: 54px;
+    }
+}
