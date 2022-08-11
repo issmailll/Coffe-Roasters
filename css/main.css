@@ -95,6 +95,14 @@ img {
           align-items: center;
 }
 
+.header__nav-link:hover {
+  color: #333D4B;
+}
+
+.header__nav-link:focus {
+  color: #17dd17;
+}
+
 .header__burger {
   display: none;
 }
@@ -224,6 +232,7 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   color: #83888F;
+  font-weight: 700;
 }
 
 @media only screen and (max-width: 788px) {
@@ -344,6 +353,10 @@ img {
   background-color: #0E8784;
   border-radius: 6px;
   text-decoration: none;
+}
+
+.site-link:hover {
+  background-color: #66D2CF;
 }
 
 .collection {
@@ -1002,6 +1015,10 @@ img {
 .footer-nav__link {
   color: #83888F;
   text-decoration: none;
+}
+
+.footer-nav__link:hover {
+  color: #FEFCF7;
 }
 
 @media only screen and (max-width: 1280px) {

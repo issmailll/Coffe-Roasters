@@ -4,6 +4,12 @@
     justify-content: space-between;
     align-items: center;
 }
+.header__nav-link:hover{
+    color: $black;
+}
+.header__nav-link:focus{
+    color: rgb(23, 221, 23);
+}
 .header__burger{
     display: none;
 }

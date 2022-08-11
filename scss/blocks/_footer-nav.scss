@@ -19,6 +19,9 @@
 .footer-nav__link{
     color: #83888F;
     text-decoration: none;
+    &:hover{
+        color: $white;
+    }
 }
 @media only screen and (max-width:$tablet){
     .footer-nav{
