@@ -1,0 +1,44 @@
+.countries{
+    margin-bottom: 167px;
+    padding-left: 85px;
+}
+.countries__title{
+    @include text-style;
+    margin: 0;
+    margin-bottom: 167px;
+    color: #83888F;
+    font-size: 24px;
+    line-height: 32px;
+}
+.countries__list{
+    @include list-style;
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width:$tablet){
+    .container{
+        max-width: 668px;
+    }
+    .countries{
+        margin-bottom: 144px;
+        padding: 0;
+    }
+    .countries__title{
+        margin-bottom: 170px;
+    }
+}
+@media only screen and (max-width:$mobile){
+    .container{
+        max-width: 327px;
+    }
+    .countries{
+        margin-bottom: 120px;
+        text-align: center;
+    }
+    .countries__title{
+        margin-bottom: 169px;
+    }
+    .countries__list{
+        flex-direction: column;
+    }
+}
