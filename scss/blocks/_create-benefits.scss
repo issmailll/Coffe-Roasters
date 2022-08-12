@@ -1,0 +1,62 @@
+.create-benefits{
+    margin-bottom: 168px;
+}
+.create-benefits__content-wrapper{
+    background-color: #2C343E;
+    color: $white;
+    border-radius: $big-radius;
+    padding: 198px 0 99px 85px;
+}
+.create-benefits__list{
+    @include list-style;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    &::before{
+        content: '';
+        display: block;
+        width: 760px;
+        height: 1px;
+        background-color: $gold;
+        position: absolute;
+        top: -75px;
+        left: 18px;
+    }
+}
+.create-benefits__item{
+    max-width: 285px;
+    margin-right: 95px;
+    position: relative;
+    &:nth-child(3n),
+    :last-child{
+        margin-right: 0;
+    }
+    &::before{
+        content: '';
+        display: block;
+        width: 31px;
+        height: 31px;
+        background-image: url(../../img/create-benefits_oval.svg);
+        position: absolute;
+        top: -90px;
+        left: 0
+    }
+}
+.create-benefits__item-number{
+    @include text-style;
+    font-size: 72px;
+    line-height: 72px;
+    margin: 0;
+    color: $gold;
+}
+.create-benefits__item-title{
+    @include text-style;
+    font-size: 35px;
+    line-height: 36px;
+    margin: 0;
+    margin-top: 38px;
+    margin-bottom: 42px;
+}
+.create-benefits__item-description{
+    margin: 0;
+}

@@ -1547,4 +1547,89 @@ img {
     line-height: 40px;
   }
 }
+
+.create-benefits {
+  margin-bottom: 168px;
+}
+
+.create-benefits__content-wrapper {
+  background-color: #2C343E;
+  color: #FEFCF7;
+  border-radius: 10px;
+  padding: 198px 0 99px 85px;
+}
+
+.create-benefits__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.create-benefits__list::before {
+  content: '';
+  display: block;
+  width: 760px;
+  height: 1px;
+  background-color: #FDD6BA;
+  position: absolute;
+  top: -75px;
+  left: 18px;
+}
+
+.create-benefits__item {
+  max-width: 285px;
+  margin-right: 95px;
+  position: relative;
+}
+
+.create-benefits__item:nth-child(3n),
+.create-benefits__item :last-child {
+  margin-right: 0;
+}
+
+.create-benefits__item::before {
+  content: '';
+  display: block;
+  width: 31px;
+  height: 31px;
+  background-image: url(../../img/create-benefits_oval.svg);
+  position: absolute;
+  top: -90px;
+  left: 0;
+}
+
+.create-benefits__item-number {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 72px;
+  line-height: 72px;
+  margin: 0;
+  color: #FDD6BA;
+}
+
+.create-benefits__item-title {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 900;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 35px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 38px;
+  margin-bottom: 42px;
+}
+
+.create-benefits__item-description {
+  margin: 0;
+}
 /*# sourceMappingURL=main.css.map */
