@@ -10,12 +10,11 @@
 <body>
   <!-- header bo'limi -->
   <header class="header container">
-    <a href="#"
-    ><img
-    class="header__logo-img"
-    src="img/header-site-logo.svg"
-    alt="site logo"
-    /></a>
+    <a href="#"><img
+      class="header__logo-img"
+      src="img/header-site-logo.svg"
+      alt="site logo"/>
+    </a>
     <nav class="header__nav header__nav--opened nav">
       <ul class="nav__list">
         <li class="nav__item">
@@ -133,7 +132,7 @@
                   <span class="visually-hidden">Toggler Menu Button</span>
                 </button>
               </div>
-              <form>
+              <form class="types__form">
                 <ul class="choises">
                   <li class="choises__item">
                     <label class="choises__label" for="coffe-capsule"></label>
@@ -191,11 +190,11 @@
             <li class="types__item">
               <div class="types__content-wrapper">
                 <h3 class="types__title">What type of coffee?</h3>
-                <button class="types__burger">
+                <button class="types__burger types__burger-origin">
                   <span class="visually-hidden">Toggler Menu Button</span>
                 </button>
               </div>
-              <form>
+              <form class="types__form types__form-origin">
                 <ul class="choises">
                   <li class="choises__item">
                     <label class="choises__label" for="type-origin"></label>
@@ -251,11 +250,11 @@
             <li class="types__item">
               <div class="types__content-wrapper">
                 <h3 class="types__title">How much would you like?</h3>
-                <button class="types__burger">
+                <button class="types__burger types__burger-gramm">
                   <span class="visually-hidden">Toggler Menu Button</span>
                 </button>
               </div>
-              <form>
+              <form class="types__form-gramm">
                 <ul class="choises">
                   <li class="choises__item">
                     <label class="choises__label" for="how-much-250g"></label>
@@ -314,11 +313,11 @@
             <li class="types__item">
               <div class="types__content-wrapper">
                 <h3 class="types__title">Want us to grind them?</h3>
-                <button class="types__burger">
+                <button class="types__burger types__burger-grind">
                   <span class="visually-hidden">Toggler Menu Button</span>
                 </button>
               </div>
-              <form>
+              <form class="types__form-grind">
                 <ul class="choises">
                   <li class="choises__item">
                     <label
@@ -379,11 +378,11 @@
             <li class="types__item">
               <div class="types__content-wrapper">
                 <h3 class="types__title">How often should we deliver?</h3>
-                <button class="types__burger">
+                <button class="types__burger types__burger-deliver">
                   <span class="visually-hidden">Toggler Menu Button</span>
                 </button>
               </div>
-              <form>
+              <form class="types__form-deliver">
                 <ul class="choises">
                   <li class="choises__item">
                     <label
@@ -532,16 +531,49 @@
         <script>
           const elBurger = document.querySelector(".header__burger");
           const elHeader = document.querySelector(".header");
-          
           elBurger.addEventListener("click", function () {
             elHeader.classList.toggle("header--opened");
             elBurger.classList.toggle("header__burger--opened");
           });
-          const elBurgerArrow = document.querySelector(".types__burger");
           
-          elBurgerArrow.addEventListener("click", function(){
-            elBurgerArrow.classList.toggle("types__burger--closed");
-          })
+          const elBurgerArrowCoffe = document.querySelector(".types__burger");
+          const elFormArrowCofee = document.querySelector(".types__form");
+          elBurgerArrowCoffe.addEventListener("click", function () {
+            elBurgerArrowCoffe.classList.toggle("types__burger--closed");
+            elFormArrowCofee.classList.toggle("types__form--closed");
+          });
+          
+          const elBurgerArrowOrigin = document.querySelector(
+          ".types__burger-origin"
+          );
+          const elFormArrowOrigin = document.querySelector(".types__form-origin");
+          elBurgerArrowOrigin.addEventListener("click", function () {
+            elBurgerArrowOrigin.classList.toggle("types__burger-origin--closed");
+            elFormArrowOrigin.classList.toggle("types__form-origin--closed");
+          });
+          
+          const elBurgerArrowgramm = document.querySelector(".types__burger-gramm");
+          const elFormArrowgramm = document.querySelector(".types__form-gramm");
+          elBurgerArrowgramm.addEventListener("click", function () {
+            elBurgerArrowgramm.classList.toggle("types__burger-gramm--closed");
+            elFormArrowgramm.classList.toggle("types__form-gramm--closed");
+          });
+          
+          const elBurgerArrowgrind = document.querySelector(".types__burger-grind");
+          const elFormArrowgrind = document.querySelector(".types__form-grind");
+          elBurgerArrowgrind.addEventListener("click", function () {
+            elBurgerArrowgrind.classList.toggle("types__burger-grind--closed");
+            elFormArrowgrind.classList.toggle("types__form-grind--closed");
+          });
+          
+          const elBurgerArrowdeliver = document.querySelector(
+          ".types__burger-deliver"
+          );
+          const elFormArrowdeliver = document.querySelector(".types__form-deliver");
+          elBurgerArrowdeliver.addEventListener("click", function () {
+            elBurgerArrowdeliver.classList.toggle("types__burger-deliver--closed");
+            elFormArrowdeliver.classList.toggle("types__form-deliver--closed");
+          });
         </script>
       </body>
       </html>
