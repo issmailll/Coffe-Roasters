@@ -350,6 +350,17 @@
             </li>
           </ul>
         </footer>
+
+        
+        <script>
+          const ventilator = document.querySelector(".header__burger");
+          const shapka = document.querySelector(".header");
+          
+          ventilator.addEventListener("click", function () {
+              shapka.classList.toggle("header--opened");
+              ventilator.classList.toggle("header__burger--opened");
+          });
+      </script>
       </body>
       </html>
       
