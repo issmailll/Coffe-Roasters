@@ -1876,6 +1876,11 @@ img {
     font-size: 24px;
     line-height: 28px;
   }
+  .types__burger--closed::before {
+    -webkit-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    background: url(../../img/aarow-down.svg) no-repeat center center;
+  }
 }
 
 .choises {
