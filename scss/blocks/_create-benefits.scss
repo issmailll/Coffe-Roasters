@@ -10,7 +10,6 @@
 .create-benefits__list{
     @include list-style;
     display: flex;
-    flex-wrap: wrap;
     position: relative;
     &::before{
         content: '';
